@@ -19,3 +19,13 @@ class Solution {
     }
 }
 // TC: O(N) , SC :O(1)
+********************************************************************
+class Solution {
+    public int findMaxConsecutiveOnes(int[] nums) {
+        int max=0,countOnes=0;
+        for(int num:nums){
+            max=Math.max(max,countOnes=num==0?0:countOnes+1);
+        }
+        return max;
+    }
+}
