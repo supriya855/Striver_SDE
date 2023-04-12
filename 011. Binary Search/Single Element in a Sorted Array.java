@@ -11,3 +11,8 @@ class Solution {
         return nums[n-1]!=nums[n-2]? nums[n-1]:-1; 
     }
 }
+ // next approach using Xor
+    int xor=0;
+    for(int i=0;i<nums.length;i++)
+    xor=xor^nums[i];
+    return xor;
